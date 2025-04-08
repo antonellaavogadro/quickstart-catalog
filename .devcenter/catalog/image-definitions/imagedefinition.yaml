@@ -17,6 +17,9 @@ tasks:
       package: Microsoft.DotNet.SDK.8
     description: Install .NET 8
   - name: winget
+    parameters: 
+      package: Notepad++.Notepad++
+  - name: winget
     parameters:
       package: Microsoft.DotNet.SDK.6
     description: .NET 6
