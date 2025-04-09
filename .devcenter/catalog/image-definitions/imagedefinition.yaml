@@ -35,10 +35,6 @@ tasks:
     description: Install VS Enterprise
   - name: winget
     parameters:
-      package: Microsoft.VisualStudioCode
-    description: Install VS Code
-  - name: winget
-    parameters:
       package: Microsoft.AzureCLI
     description: Install Azure CLI
   - name: powershell
