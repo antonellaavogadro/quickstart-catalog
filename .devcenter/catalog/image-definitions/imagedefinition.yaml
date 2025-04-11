@@ -4,10 +4,6 @@ image: microsoftvisualstudio_visualstudioplustools_vs-2022-ent-general-win11-m36
 description: "Official image definiton fo rthe DevCenter engineering team."
 
 tasks:
-  - name: default-catalog/winget
-    parameters:
-      package: kubernetes-cli
-    description: Install kubectl
   - name: choco
     parameters:
       package: bruno
