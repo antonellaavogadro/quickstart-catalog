@@ -4,11 +4,11 @@ image: microsoftvisualstudio_visualstudioplustools_vs-2022-ent-general-win11-m36
 description: "Official image definiton fo rthe DevCenter engineering team."
 
 tasks:
-  - name: choco
+  - name: anto-test/choco
     parameters:
       package: bruno
     description: Install Bruno
-  - name: choco
+  - name: anto-test/choco
     parameters:
       package: nodejs-lts
     description: Install nodejs
