@@ -53,7 +53,7 @@ else {
     Write-Host "Microsoft.WinGet.Configuration is already installed"
 }
 
-$msVCLibsPackage = Get-AppxPackage -Name "Microsoft.VCLibs.140.00.UWPDesktop" | Where-Object { $_.Version -ge "14.0.30035.0" }
+$msVCLibsPackage = Get-AppxPackage -Name "Microsoft.VCLibs.140.00.UWPDesktop" | Where-Object { $_.Version -ge "14.0.33728.0" }
 if (!($msVCLibsPackage)) {
 # Install Microsoft.VCLibs.140.00.UWPDesktop
     try {
