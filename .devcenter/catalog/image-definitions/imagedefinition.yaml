@@ -37,26 +37,26 @@ tasks:
     parameters:
       package: Microsoft.AzureCLI
     description: Install Azure CLI
-  - name: powershell
+  - name: anto-test/powershell
     parameters:
       command: Install-Module -Name Az -Repository PSGallery -Force
     description: Install Azure Powershell
-  - name: powershell
+  - name: anto-test/powershell
     parameters:
       command: |
         $script = Invoke-RestMethod -Uri "https://aka.ms/install-artifacts-credprovider.ps1"
         iex $script
     description: Install Azure Artifacts Credential Provider
-  - name: git-clone-experimental
+  - name: anto-test/git-clone-experimental
     parameters:
       repositoryUrl: https://devdiv.visualstudio.com/DefaultCollection/OnlineServices/_git/azure-devcenter
       directory: C:\Repos
     description: Clone this repository into C:\Repos
-  - name: install-vs-extension
+  - name: anto-test/install-vs-extension
     parameters:
       marketplaceItemName: SteveCadwallader.CodeMaidVS2022
     description: Install CodeMaid
-  - name: install-vs-extension
+  - name: anto-test/install-vs-extension
     parameters:
       marketplaceItemName: vs-publisher-141975.SwitchStartupProjectForVS2022
     description: Install SwitchStartupProject
